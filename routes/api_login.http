@@ -1,0 +1,148 @@
+### Variables
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api
+@login = user_1@example.com
+@password = password
+@token = 
+### User Credentials
+@user1_email = user_1@example.com
+@user1_username = user_1
+@user2_email = user_2@example.com
+@user2_username = user_2
+@user3_email = user_3@example.com
+@user3_username = user_3
+@user_password = password 
+
+### ============================================
+### AUTHENTICATION ENDPOINTS
+### ============================================
+
+### Login - Get JWT Token (with email or username)
+# @name login
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user1_email}}",
+    "password": "{{password}}"
+}
+
+### Extract token from login response and set it
+# After running login, copy the token from response and update @token variable above
+# Or use the following to automatically extract (if your HTTP client supports it):
+# @token = {{login.response.body.data.token}}
+
+### ============================================
+### PROTECTED ENDPOINTS (Require Bearer Token)
+### ============================================
+
+### Get Authenticated User Info
+GET {{apiUrl}}/me
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Refresh JWT Token
+POST {{apiUrl}}/refresh
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Logout - Invalidate Token
+POST {{apiUrl}}/logout
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### ============================================
+### TEST SCENARIOS
+### ============================================
+
+### Test: Login with invalid credentials
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "wrong@example.com",
+    "password": "wrongpassword"
+}
+
+### Test: Login with missing login field
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "password": "{{password}}"
+}
+
+### Test: Login with missing password
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{{{user2_email}}}}"
+}
+
+### Test: Access protected route without token
+GET {{apiUrl}}/me
+Content-Type: application/json
+
+### Test: Access protected route with invalid token
+GET {{apiUrl}}/me
+Authorization: Bearer invalid_token_here
+Content-Type: application/json
+
+### ============================================
+### STATUS CHECK TESTS
+### ============================================
+
+### Test: Login with user_1 email (status = 1) - Should succeed
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user1_email}}",
+    "password": "{{user_password}}"
+}
+
+### Test: Login with user_1 username (status = 1) - Should succeed
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user1_username}}",
+    "password": "{{user_password}}"
+}
+
+### Test: Login with user_2 email (status = 0) - Should fail with "User not available"
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user2_email}}",
+    "password": "{{user_password}}"
+}
+
+### Test: Login with user_2 username (status = 0) - Should fail with "User not available"
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user2_username}}",
+    "password": "{{user_password}}"
+}
+
+### Test: Login with user_3 email (status = 1) - Should succeed
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user3_email}}",
+    "password": "{{user_password}}"
+}
+
+### Test: Login with user_3 username (status = 1) - Should succeed
+POST {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{user3_username}}",
+    "password": "{{user_password}}"
+}
