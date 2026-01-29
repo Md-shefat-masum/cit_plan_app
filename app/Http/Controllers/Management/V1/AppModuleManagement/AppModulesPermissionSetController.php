@@ -20,7 +20,7 @@ class AppModulesPermissionSetController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'role_id' => 'required|integer|exists:user_roles,id',
-            'scopes' => 'required|array|min:1',
+            'scopes' => 'required|array',
             'scopes.*.app_module_id' => 'nullable|integer|exists:app_modules,id',
             'scopes.*.app_module_sub_module_id' => 'nullable|integer|exists:app_module_sub_modules,id',
             'scopes.*.app_module_sub_module_endpoint_id' => 'required|integer|exists:app_module_sub_module_endpoints,id',
@@ -68,6 +68,7 @@ class AppModulesPermissionSetController extends Controller
                             'app_module_id' => $scope['app_module_id'] ?? $endpoint->app_module_id,
                             'app_module_sub_module_id' => $scope['app_module_sub_module_id'] ?? $endpoint->app_module_sub_module_id,
                             'app_module_sub_module_endpoint_id' => $endpointId,
+                            'uri' => $endpoint->uri, // Store URI for permission checking
                         ];
                     }
                 }
@@ -77,40 +78,67 @@ class AppModulesPermissionSetController extends Controller
             $endpointIds = array_unique($endpointIds);
 
             if (empty($endpointIds)) {
-                DB::rollBack();
-                return api_response([], 'No valid endpoints found in scopes', 400);
+                // Revoke all: delete existing permissions and cache empty
+                AppModuleRole::where('user_role_id', $roleId)->delete();
+                $cacheKey = "user_{$roleId}_permissions";
+                Cache::put($cacheKey, [], now()->addDays(7));
+                DB::commit();
+                return api_response([
+                    'role_id' => $roleId,
+                    'added_count' => 0,
+                    'removed_count' => 0,
+                ], 'All permissions revoked for role', 200);
             }
 
-            // Step 4: Get all existing permissions for this role in a single query (optimized)
-            $allExistingForRole = AppModuleRole::where('user_role_id', $roleId)
-                ->pluck('app_module_sub_module_endpoint_id')
+            // Step 4: Get all existing permissions for this role by URI (optimized)
+            // Track by URI instead of endpoint_id since IDs can change randomly
+            $existingUris = AppModuleRole::where('user_role_id', $roleId)
+                ->whereNotNull('uri')
+                ->pluck('uri')
                 ->toArray();
+            
+            // Build URI list from request endpoints
+            $requestUris = [];
+            foreach ($endpointIds as $endpointId) {
+                if (isset($endpointDataMap[$endpointId]['uri'])) {
+                    $requestUris[] = $endpointDataMap[$endpointId]['uri'];
+                }
+            }
 
-            // Step 5: Find which endpoints are missing (need to be added)
-            $endpointsToAdd = array_diff($endpointIds, $allExistingForRole);
+            // Step 5: Find which URIs are missing (need to be added)
+            $urisToAdd = [];
+            foreach ($endpointIds as $endpointId) {
+                if (isset($endpointDataMap[$endpointId]['uri'])) {
+                    $uri = $endpointDataMap[$endpointId]['uri'];
+                    if (!in_array($uri, $existingUris)) {
+                        $urisToAdd[] = $endpointId;
+                    }
+                }
+            }
 
-            // Step 6: Find which endpoints should be removed (exist in DB but not in request)
-            $endpointsToRemove = array_diff($allExistingForRole, $endpointIds);
+            // Step 6: Find which URIs should be removed (exist in DB but not in request)
+            $urisToRemove = array_diff($existingUris, $requestUris);
 
-            // Step 7: Delete permissions that are not in the request (batch delete for performance)
-            if (!empty($endpointsToRemove)) {
+            // Step 7: Delete permissions that are not in the request (batch delete by URI for performance)
+            if (!empty($urisToRemove)) {
                 AppModuleRole::where('user_role_id', $roleId)
-                    ->whereIn('app_module_sub_module_endpoint_id', $endpointsToRemove)
+                    ->whereIn('uri', $urisToRemove)
                     ->delete();
             }
 
-            // Step 8: Insert new permissions (only missing ones, bulk insert for better performance)
-            if (!empty($endpointsToAdd)) {
+            // Step 8: Insert new permissions (only missing URIs, bulk insert for better performance)
+            if (!empty($urisToAdd)) {
                 $permissionsToInsert = [];
                 $creator = auth('api')->id() ?? 0;
                 $now = now();
 
-                foreach ($endpointsToAdd as $endpointId) {
+                foreach ($urisToAdd as $endpointId) {
                     if (isset($endpointDataMap[$endpointId])) {
                         $permissionsToInsert[] = [
                             'app_module_id' => $endpointDataMap[$endpointId]['app_module_id'],
                             'app_module_sub_module_id' => $endpointDataMap[$endpointId]['app_module_sub_module_id'],
                             'app_module_sub_module_endpoint_id' => $endpointId,
+                            'uri' => $endpointDataMap[$endpointId]['uri'], // Store URI for permission checking
                             'user_role_id' => $roleId,
                             'status' => 1,
                             'slug' => uniqid(),
@@ -137,8 +165,8 @@ class AppModulesPermissionSetController extends Controller
 
             return api_response([
                 'role_id' => $roleId,
-                'added_count' => count($endpointsToAdd),
-                'removed_count' => count($endpointsToRemove),
+                'added_count' => count($urisToAdd),
+                'removed_count' => count($urisToRemove),
                 'total_permissions' => count($endpointIds),
             ], 'Permissions updated successfully', 200);
 
@@ -161,40 +189,11 @@ class AppModulesPermissionSetController extends Controller
     private function cacheUserRolePermissions($roleId)
     {
         try {
-            // Fetch all permissions for this role with relationships
+            // Fetch all permissions for this role - get URIs directly from app_module_roles table
             $permissions = AppModuleRole::where('user_role_id', $roleId)
                 ->where('status', 1)
-                ->with([
-                    'appModule:id,title,slug',
-                    'appModuleSubModule:id,title,slug',
-                    'appModuleSubModuleEndpoint:id,app_module_id,app_module_sub_module_id,uri,action_key,title'
-                ])
-                ->get()
-                ->map(function ($permission) {
-                    return [
-                        'id' => $permission->id,
-                        'app_module_id' => $permission->app_module_id,
-                        'app_module_sub_module_id' => $permission->app_module_sub_module_id,
-                        'app_module_sub_module_endpoint_id' => $permission->app_module_sub_module_endpoint_id,
-                        'user_role_id' => $permission->user_role_id,
-                        'app_module' => $permission->appModule ? [
-                            'id' => $permission->appModule->id,
-                            'title' => $permission->appModule->title,
-                            'slug' => $permission->appModule->slug,
-                        ] : null,
-                        'app_module_sub_module' => $permission->appModuleSubModule ? [
-                            'id' => $permission->appModuleSubModule->id,
-                            'title' => $permission->appModuleSubModule->title,
-                            'slug' => $permission->appModuleSubModule->slug,
-                        ] : null,
-                        'endpoint' => $permission->appModuleSubModuleEndpoint ? [
-                            'id' => $permission->appModuleSubModuleEndpoint->id,
-                            'uri' => $permission->appModuleSubModuleEndpoint->uri,
-                            'action_key' => $permission->appModuleSubModuleEndpoint->action_key,
-                            'title' => $permission->appModuleSubModuleEndpoint->title,
-                        ] : null,
-                    ];
-                })
+                ->whereNotNull('uri')
+                ->pluck('uri')
                 ->toArray();
 
             // Cache key format: user_{role_id}_permissions
