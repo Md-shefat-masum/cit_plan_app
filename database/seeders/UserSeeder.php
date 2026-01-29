@@ -50,8 +50,39 @@ class UserSeeder extends Seeder
         User::create([
             'user_role_id' => 1,
             'name' => 'user_3',
-            'username' => 'user_3',
-            'email' => 'user_3@example.com',
+            'username' => 'planning',
+            'email' => 'planing@example.com',
+            'password' => Hash::make('password'),
+            'status' => 1,
+            'slug' => uniqid() . time(),
+        ]);
+
+        // User 3: user_role_id = 1
+        User::create([
+            'user_role_id' => 2,
+            'name' => 'user_4',
+            'username' => 'department',
+            'email' => 'department@example.com',
+            'password' => Hash::make('password'),
+            'status' => 1,
+            'slug' => uniqid() . time(),
+        ]);
+        // User 3: user_role_id = 1
+        User::create([
+            'user_role_id' => 3,
+            'name' => 'user_5',
+            'username' => 'assistant',
+            'email' => 'assistant@example.com',
+            'password' => Hash::make('password'),
+            'status' => 1,
+            'slug' => uniqid() . time(),
+        ]);
+        // User 3: user_role_id = 1
+        User::create([
+            'user_role_id' => 4,
+            'name' => 'user_6',
+            'username' => 'viewer',
+            'email' => 'viewer@example.com',
             'password' => Hash::make('password'),
             'status' => 1,
             'slug' => uniqid() . time(),
