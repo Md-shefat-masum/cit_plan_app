@@ -4,7 +4,6 @@
 @baseUrl = http://localhost:8000
 @apiUrl = {{baseUrl}}/api/v1/management/app-module-management/app-module-sub-modules
 @token = 
-### APP MODULE SUB MODULES API ENDPOINTS
 ### ============================================
 
 ### Get all app module sub modules (Index)

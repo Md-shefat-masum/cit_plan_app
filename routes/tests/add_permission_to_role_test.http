@@ -4,8 +4,6 @@
 @baseUrl = http://localhost:8000
 @apiUrl = {{baseUrl}}/api/v1/add-permission-to-role
 @token = 
-
-### ADD PERMISSIONS TO ROLE API ENDPOINTS
 ### ============================================
 
 ### Add permissions to role (Basic - Single Scope)
