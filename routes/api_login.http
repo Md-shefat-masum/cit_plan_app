@@ -58,8 +58,8 @@ POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
-    "email": "wrong@example.com",
-    "password": "wrongpassword"
+    "email": "department",
+    "password": "password"
 }
 
 ### Test: Login with missing login field
@@ -96,7 +96,7 @@ POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
-    "email": "{{user1_email}}",
+    "email": "{{user1_username}}",
     "password": "{{user_password}}"
 }
 
