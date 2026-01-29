@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
@@ -14,6 +15,15 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        // Disable foreign key checks to allow truncating tables with foreign key constraints
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        
+        // Force truncate users table
+        User::truncate();
+        
+        // Re-enable foreign key checks
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
         // User 1: user_role_id = -1
         User::create([
             'user_role_id' => -1,
