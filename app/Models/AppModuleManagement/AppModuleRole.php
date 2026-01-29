@@ -24,6 +24,7 @@ class AppModuleRole extends Model
         'app_module_id',
         'app_module_sub_module_id',
         'app_module_sub_module_endpoint_id',
+        'uri',
         'user_role_id',
         'status',
         'slug',
