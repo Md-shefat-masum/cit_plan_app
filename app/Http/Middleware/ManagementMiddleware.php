@@ -54,6 +54,7 @@ class ManagementMiddleware
 
     /**
      * Get user role permissions from cache or database
+     * Returns array of URIs that the role has permission to access
      *
      * @param int $roleId
      * @return array
@@ -69,40 +70,11 @@ class ManagementMiddleware
             return $permissions;
         }
 
-        // If not in cache, fetch from database
+        // If not in cache, fetch URIs directly from app_module_roles table
         $permissions = AppModuleRole::where('user_role_id', $roleId)
             ->where('status', 1)
-            ->with([
-                'appModule:id,title,slug',
-                'appModuleSubModule:id,title,slug',
-                'appModuleSubModuleEndpoint:id,app_module_id,app_module_sub_module_id,uri,action_key,title'
-            ])
-            ->get()
-            ->map(function ($permission) {
-                return [
-                    'id' => $permission->id,
-                    'app_module_id' => $permission->app_module_id,
-                    'app_module_sub_module_id' => $permission->app_module_sub_module_id,
-                    'app_module_sub_module_endpoint_id' => $permission->app_module_sub_module_endpoint_id,
-                    'user_role_id' => $permission->user_role_id,
-                    'app_module' => $permission->appModule ? [
-                        'id' => $permission->appModule->id,
-                        'title' => $permission->appModule->title,
-                        'slug' => $permission->appModule->slug,
-                    ] : null,
-                    'app_module_sub_module' => $permission->appModuleSubModule ? [
-                        'id' => $permission->appModuleSubModule->id,
-                        'title' => $permission->appModuleSubModule->title,
-                        'slug' => $permission->appModuleSubModule->slug,
-                    ] : null,
-                    'endpoint' => $permission->appModuleSubModuleEndpoint ? [
-                        'id' => $permission->appModuleSubModuleEndpoint->id,
-                        'uri' => $permission->appModuleSubModuleEndpoint->uri,
-                        'action_key' => $permission->appModuleSubModuleEndpoint->action_key,
-                        'title' => $permission->appModuleSubModuleEndpoint->title,
-                    ] : null,
-                ];
-            })
+            ->whereNotNull('uri')
+            ->pluck('uri')
             ->toArray();
 
         // Cache for 24 hours
@@ -112,108 +84,95 @@ class ManagementMiddleware
     }
 
     /**
-     * Get current request URI in the format stored in permissions
+     * Get current request path (no parameter normalization).
+     * Used for matching against permission URI patterns.
      *
      * @param Request $request
      * @return string
      */
-    private function getCurrentUri(Request $request)
+    private function getCurrentUri(Request $request): string
     {
-        // Get the full path including prefix (e.g., /api/v1/management/user-management/user-roles)
-        $fullPath = $request->getPathInfo();
-        
+        $path = $request->getPathInfo();
+
         // Remove /api prefix if present
-        $path = preg_replace('/^\/api/', '', $fullPath);
-        
-        // Ensure leading slash
-        if (!str_starts_with($path, '/')) {
-            $path = '/' . $path;
+        $path = preg_replace('#^/api#', '', $path);
+
+        if ($path === '' || !str_starts_with($path, '/')) {
+            $path = '/' . ltrim($path, '/');
         }
 
-        // Handle route parameters - replace actual values with placeholders
-        $route = $request->route();
-        if ($route && $route->parameters()) {
-            $uri = $path;
-            $parameters = $route->parameters();
-            
-            // Replace parameter values with placeholders
-            foreach ($parameters as $key => $value) {
-                // Replace the parameter value with {key} format
-                $uri = str_replace('/' . $value, '/{' . $key . '}', $uri);
-                $uri = str_replace($value, '{' . $key . '}', $uri);
-            }
-            
-            $path = $uri;
-        }
-
-        // Normalize: remove trailing slash unless it's root
         $path = rtrim($path, '/');
-        if (empty($path)) {
-            $path = '/';
-        }
-
-        return $path;
+        return $path === '' ? '/' : $path;
     }
 
     /**
-     * Check if user has permission for the given URI
+     * Check if user has permission for the given URI.
+     * Matches actual request path against permission URIs.
+     * Permission URIs may contain placeholders like {id}, {user_id}, {blog_id}, etc.
+     * Each {param} matches exactly one path segment.
      *
-     * @param array $permissions
-     * @param string $requestedUri
+     * @param array  $permissions  Array of permission URIs (e.g. /v1/management/user-roles/{id})
+     * @param string $requestPath  Actual request path (e.g. /v1/management/user-roles/42)
      * @return bool
      */
-    private function hasPermission(array $permissions, string $requestedUri)
+    private function hasPermission(array $permissions, string $requestPath): bool
     {
         if (empty($permissions)) {
             return false;
         }
 
-        // Normalize requested URI
-        $requestedUri = rtrim($requestedUri, '/');
-        if (empty($requestedUri)) {
-            $requestedUri = '/';
-        }
+        $requestPath = $this->normalizePath($requestPath);
 
-        foreach ($permissions as $permission) {
-            if (!isset($permission['endpoint']['uri'])) {
+        foreach ($permissions as $permissionUri) {
+            if ($permissionUri === null || $permissionUri === '') {
                 continue;
             }
 
-            $permissionUri = $permission['endpoint']['uri'];
-            
-            // Normalize permission URI
-            $permissionUri = rtrim($permissionUri, '/');
-            if (empty($permissionUri)) {
-                $permissionUri = '/';
-            }
+            $permissionUri = $this->normalizePath($permissionUri);
 
-            // Exact match
-            if ($permissionUri === $requestedUri) {
+            // Exact match (static routes)
+            if ($permissionUri === $requestPath) {
                 return true;
             }
 
-            // Check if requested URI matches with parameter placeholders
-            // e.g., /v1/management/user-roles/123 matches /v1/management/user-roles/{id}
-            $pattern = preg_replace('/\{[^}]+\}/', '[^/]+', preg_quote($permissionUri, '#'));
-            $pattern = '#^' . $pattern . '$#';
-            
-            if (preg_match($pattern, $requestedUri)) {
-                return true;
-            }
-
-            // Check if permission URI is a prefix of requested URI (with trailing slash)
-            // e.g., /v1/management/user-management/user-roles/ matches /v1/management/user-management/user-roles/store
-            if (str_starts_with($requestedUri, $permissionUri . '/')) {
-                return true;
-            }
-
-            // Also check if requested URI matches permission URI with trailing slash
-            // e.g., /v1/management/user-management/user-roles matches /v1/management/user-management/user-roles/
-            if ($requestedUri . '/' === $permissionUri || $permissionUri . '/' === $requestedUri) {
+            // Pattern match: permission has placeholders e.g. {id}, {user_id}, {blog_id}
+            // Build regex from permission URI, replace each {param} with [^/]+
+            if ($this->uriPatternMatches($permissionUri, $requestPath)) {
                 return true;
             }
         }
 
         return false;
+    }
+
+    private function normalizePath(string $path): string
+    {
+        $path = rtrim($path, '/');
+        return $path === '' ? '/' : $path;
+    }
+
+    /**
+     * Check if permission URI pattern matches request path.
+     * Placeholders {param} match exactly one segment each.
+     *
+     * @param string $permissionUri e.g. /v1/management/user-roles/{id} or user/{user_id}/blogs/{blog_id}/{comment_id}
+     * @param string $requestPath   e.g. /v1/management/user-roles/42 or user/1/blogs/2/3
+     * @return bool
+     */
+    private function uriPatternMatches(string $permissionUri, string $requestPath): bool
+    {
+        // Replace each {...} with a token before quoting (preg_quote escapes braces)
+        $token = '___SEGMENT___';
+        $pattern = preg_replace('/\{[^}]+\}/', $token, $permissionUri);
+
+        if ($pattern === null) {
+            return false;
+        }
+
+        $pattern = preg_quote($pattern, '#');
+        $pattern = str_replace($token, '[^/]+', $pattern);
+        $pattern = '#^' . $pattern . '$#';
+
+        return (bool) preg_match($pattern, $requestPath);
     }
 }

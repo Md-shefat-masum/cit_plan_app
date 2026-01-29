@@ -4,8 +4,6 @@
 @baseUrl = http://localhost:8000
 @apiUrl = {{baseUrl}}/api/v1/management/user-management/user-roles
 @token = 
-
-### Get all user roles with pagination
 GET {{apiUrl}}?per_page=10&page=1
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -21,7 +19,7 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 ### Get a specific user role by ID
-GET {{apiUrl}}/1
+GET {{apiUrl}}/3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -4,7 +4,6 @@
 @baseUrl = http://localhost:8000
 @apiUrl = {{baseUrl}}/api/v1/management/app-module-management/app-modules
 @token = 
-### ============================================
 
 ### Get all app modules (Index)
 GET {{apiUrl}}
