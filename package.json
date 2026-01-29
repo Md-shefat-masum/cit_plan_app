@@ -4,7 +4,9 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "add_api_test_token": "php routes/tests/scripts/update_token.php",
+        "remove_api_test_token": "php routes/tests/scripts/clear_token.php"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
