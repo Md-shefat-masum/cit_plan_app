@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Management\V1\AppModuleManagement\AppModule\AppModuleController;
 use App\Http\Controllers\Management\V1\AppModuleManagement\AppModuleSubModule\AppModuleSubModuleController;
 use App\Http\Controllers\Management\V1\AppModuleManagement\AppModuleSubModuleEndpoint\AppModuleSubModuleEndpointController;
+use App\Http\Controllers\Management\V1\UserManagement\User\UserController;
 use App\Http\Controllers\Management\V1\UserManagement\UserRole\UserRoleController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,17 @@ Route::group(['prefix' => 'v1',], function () {
     // public routes will go here
     Route::post('auth/login', [AuthController::class, 'login'])->name('api.login');
 
+    // Permission management API routes (public for web UI, token validated in controller)
+    Route::prefix('permission-management')->group(function () {
+        Route::post('validate-token', [\App\Http\Controllers\Management\PermissionManagementController::class, 'validateToken']);
+        Route::get('modules', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getModules']);
+        Route::get('sub-modules/{moduleId?}', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getSubModules']);
+        Route::get('endpoints/{moduleId?}/{subModuleId?}', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getEndpoints']);
+        Route::get('endpoints-grouped', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getAllEndpointsGrouped']);
+        Route::get('roles', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getRoles']);
+        Route::get('role-permissions/{roleId}', [\App\Http\Controllers\Management\PermissionManagementController::class, 'getRolePermissions']);
+    });
+
     // protected routes will go here
     Route::group(['middleware' => 'api.auth'], function () {
 
@@ -57,7 +69,10 @@ Route::group(['prefix' => 'v1',], function () {
             // user management routes will go here
             Route::group(['prefix' => 'user-management'], function () {
                 // user management routes will go here
-                Route::group(['prefix' => 'users'], function () {});
+                Route::group(['prefix' => 'users'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\UserManagement\User\UserController');
+                    // extra routes will go here
+                });
 
                 // user role management routes will go here
                 Route::group(['prefix' => 'user-roles'], function () {
