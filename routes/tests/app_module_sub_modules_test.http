@@ -1,0 +1,340 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/scripts/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/app-module-management/app-module-sub-modules
+@token = 
+### APP MODULE SUB MODULES API ENDPOINTS
+### ============================================
+
+### Get all app module sub modules (Index)
+GET {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with pagination
+GET {{apiUrl}}?per_page=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with search filter (searches title, slug, and app_module_title)
+GET {{apiUrl}}?search=dashboard
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules filtered by app_module_id
+GET {{apiUrl}}?conditions[app_module_id]=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with custom fields
+GET {{apiUrl}}?fields[]=id&fields[]=title&fields[]=app_module_title&fields[]=status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with ordering
+GET {{apiUrl}}?orderByCol=title&orderByAsc=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all app module sub modules with conditions
+GET {{apiUrl}}?conditions[status]=1&conditions[creator]=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific app module sub module by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new app module sub module (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "title": "Dashboard Settings",
+    "status": 1
+}
+
+### Create a new app module sub module - Inactive
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "title": "Dashboard Reports",
+    "status": 0
+}
+
+### Update an app module sub module
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "app_module_id": 1,
+    "title": "Updated Dashboard Settings",
+    "status": 1
+}
+
+### Update an app module sub module - Change app_module_id
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "app_module_id": 2,
+    "title": "Updated Dashboard Settings",
+    "status": 1
+}
+
+### Soft delete an app module sub module (Set status to 0)
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore an app module sub module (Set status to 1)
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete an app module sub module (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import multiple app module sub modules
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "app_module_id": 1,
+            "title": "User List Sub Module",
+            "status": 1
+        },
+        {
+            "app_module_id": 1,
+            "title": "User Create Sub Module",
+            "status": 1
+        },
+        {
+            "app_module_id": 2,
+            "title": "Settings General Sub Module",
+            "status": 0
+        }
+    ]
+}
+
+### Get analytics data
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### ============================================
+### TEST SCENARIOS
+### ============================================
+
+### Test: Create app module sub module without app_module_id (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Test Sub Module",
+    "status": 1
+}
+
+### Test: Create app module sub module without title (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "status": 1
+}
+
+### Test: Create app module sub module with invalid app_module_id (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 99999,
+    "title": "Test Sub Module",
+    "status": 1
+}
+
+### Test: Create app module sub module with invalid status (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "title": "Test Sub Module",
+    "status": 2
+}
+
+### Test: Create app module sub module with title exceeding max length (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "title": "This is a very long title that exceeds the maximum allowed length of 100 characters and should trigger a validation error",
+    "status": 1
+}
+
+### Test: Update app module sub module with non-existent ID (404 Error)
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 99999,
+    "app_module_id": 1,
+    "title": "Non-existent Sub Module",
+    "status": 1
+}
+
+### Test: Update app module sub module without ID (Validation Error)
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "app_module_id": 1,
+    "title": "Updated Sub Module",
+    "status": 1
+}
+
+### Test: Update app module sub module with invalid app_module_id (Validation Error)
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "app_module_id": 99999,
+    "title": "Updated Sub Module",
+    "status": 1
+}
+
+### Test: Get app module sub module with non-existent ID (404 Error)
+GET {{apiUrl}}/99999
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Test: Soft delete with non-existent ID (404 Error)
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 99999
+}
+
+### Test: Restore with non-existent ID (404 Error)
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 99999
+}
+
+### Test: Destroy with non-existent ID (404 Error)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 99999
+}
+
+### Test: Import with invalid data structure (Validation Error)
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "status": 1
+        }
+    ]
+}
+
+### Test: Import with missing app_module_id (Validation Error)
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "app_module_id": 1,
+            "title": "Valid Sub Module",
+            "status": 1
+        },
+        {
+            "title": "Invalid Sub Module",
+            "status": 1
+        }
+    ]
+}
+
+### Test: Import with missing title (Validation Error)
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "app_module_id": 1,
+            "title": "Valid Sub Module",
+            "status": 1
+        },
+        {
+            "app_module_id": 1,
+            "status": 1
+        }
+    ]
+}
+
+### Test: Access endpoint without token (401 Error)
+GET {{apiUrl}}
+Content-Type: application/json
+
+### Test: Access endpoint with invalid token (401 Error)
+GET {{apiUrl}}
+Authorization: Bearer invalid_token_here
+Content-Type: application/json

@@ -1,0 +1,325 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/scripts/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/add-permission-to-role
+@token = 
+
+### ADD PERMISSIONS TO ROLE API ENDPOINTS
+### ============================================
+
+### Add permissions to role (Basic - Single Scope)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 1,
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### Add permissions to role (Multiple Scopes)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 1,
+      "app_module_sub_module_endpoint_id": 1
+    },
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 1,
+      "app_module_sub_module_endpoint_id": 2
+    },
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 2,
+      "app_module_sub_module_endpoint_id": 5
+    }
+  ]
+}
+
+### Add permissions to role (Minimal - Only endpoint_id required)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 1
+    },
+    {
+      "app_module_sub_module_endpoint_id": 2
+    },
+    {
+      "app_module_sub_module_endpoint_id": 3
+    }
+  ]
+}
+
+### Update permissions for role (Replace existing permissions)
+### This will remove old permissions and add new ones
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 10
+    },
+    {
+      "app_module_sub_module_endpoint_id": 11
+    }
+  ]
+}
+
+### Add permissions to different role
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 2,
+  "scopes": [
+    {
+      "app_module_id": 2,
+      "app_module_sub_module_id": 3,
+      "app_module_sub_module_endpoint_id": 15
+    }
+  ]
+}
+
+### VALIDATION ERROR TESTS
+### ============================================
+
+### Validation Error: Missing role_id
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### Validation Error: Missing scopes
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1
+}
+
+### Validation Error: Empty scopes array
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": []
+}
+
+### Validation Error: Invalid role_id (does not exist)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 99999,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### Validation Error: Missing app_module_sub_module_endpoint_id
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 1
+    }
+  ]
+}
+
+### Validation Error: Invalid app_module_sub_module_endpoint_id (does not exist)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 99999
+    }
+  ]
+}
+
+### Validation Error: Invalid app_module_id (does not exist)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_id": 99999,
+      "app_module_sub_module_id": 1,
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### Validation Error: Invalid app_module_sub_module_id (does not exist)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_id": 1,
+      "app_module_sub_module_id": 99999,
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### Validation Error: Invalid data types
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": "invalid",
+  "scopes": [
+    {
+      "app_module_id": "invalid",
+      "app_module_sub_module_id": "invalid",
+      "app_module_sub_module_endpoint_id": "invalid"
+    }
+  ]
+}
+
+### EDGE CASES
+### ============================================
+
+### Large batch of permissions (Performance test)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 1
+    },
+    {
+      "app_module_sub_module_endpoint_id": 2
+    },
+    {
+      "app_module_sub_module_endpoint_id": 3
+    },
+    {
+      "app_module_sub_module_endpoint_id": 4
+    },
+    {
+      "app_module_sub_module_endpoint_id": 5
+    },
+    {
+      "app_module_sub_module_endpoint_id": 6
+    },
+    {
+      "app_module_sub_module_endpoint_id": 7
+    },
+    {
+      "app_module_sub_module_endpoint_id": 8
+    },
+    {
+      "app_module_sub_module_endpoint_id": 9
+    },
+    {
+      "app_module_sub_module_endpoint_id": 10
+    }
+  ]
+}
+
+### Remove all permissions (Empty scopes - will remove all existing permissions)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": []
+}
+
+### Duplicate endpoint_ids in scopes (Should handle gracefully)
+POST {{apiUrl}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "role_id": 1,
+  "scopes": [
+    {
+      "app_module_sub_module_endpoint_id": 1
+    },
+    {
+      "app_module_sub_module_endpoint_id": 1
+    },
+    {
+      "app_module_sub_module_endpoint_id": 1
+    }
+  ]
+}
+
+### NOTES
+### ============================================
+### 1. The endpoint will:
+###    - Add new permissions that don't exist
+###    - Remove permissions that exist in DB but not in request
+###    - Keep permissions that exist in both DB and request
+###
+### 2. Response includes:
+###    - role_id: The role ID
+###    - added_count: Number of permissions added
+###    - removed_count: Number of permissions removed
+###    - total_permissions: Total permissions after update
+###
+### 3. app_module_id and app_module_sub_module_id are optional
+###    If not provided, they will be fetched from the endpoint record
+###
+### 4. To completely replace permissions for a role:
+###    Send only the permissions you want to keep
+###    All other permissions will be automatically removed

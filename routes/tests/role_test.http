@@ -1,0 +1,155 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/user-management/user-roles
+@token = 
+Content-Type: application/json
+
+### Get all user roles with pagination
+GET {{apiUrl}}?per_page=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all user roles with search filter
+GET {{apiUrl}}?search=admin
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all user roles with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific user role by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new user role (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Administrator",
+    "status": 1
+}
+
+### Create a new user role - Inactive
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Guest User",
+    "status": 0
+}
+
+### Update a user role
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Updated Administrator",
+    "status": 1
+}
+
+### Soft delete a user role (Set status to 0)
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore a user role (Set status to 1)
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete a user role (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import multiple user roles
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "title": "Manager",
+            "status": 1
+        },
+        {
+            "title": "Editor",
+            "status": 1
+        },
+        {
+            "title": "Viewer",
+            "status": 0
+        }
+    ]
+}
+
+### Get analytics data
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### ============================================
+### TEST SCENARIOS
+### ============================================
+
+### Test: Create user role without title (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "status": 1
+}
+
+### Test: Create user role with invalid status (Validation Error)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Test Role",
+    "status": 2
+}
+
+### Test: Update user role with non-existent ID (404 Error)
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 99999,
+    "title": "Non-existent Role",
+    "status": 1
+}
+
+### Test: Get user role with non-existent ID (404 Error)
+GET {{apiUrl}}/99999
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Test: Access endpoint without token (401 Error)
+GET {{apiUrl}}
+Content-Type: application/json
