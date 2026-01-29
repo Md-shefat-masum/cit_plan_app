@@ -1,11 +1,9 @@
 ### Variables
 @baseUrl = http://localhost:8000
-@apiUrl = {{baseUrl}}/api
+@apiUrl = {{baseUrl}}/api/v1
 @login = user_1@example.com
 @password = password
 @token = 
-### User Credentials
-@user1_email = user_1@example.com
 @user1_username = user_1
 @user2_email = user_2@example.com
 @user2_username = user_2
@@ -19,11 +17,11 @@
 
 ### Login - Get JWT Token (with email or username)
 # @name login
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
-    "email": "{{user1_email}}",
+    "email": "{{user1_username}}",
     "password": "{{password}}"
 }
 
@@ -37,17 +35,17 @@ Content-Type: application/json
 ### ============================================
 
 ### Get Authenticated User Info
-GET {{apiUrl}}/me
+GET {{apiUrl}}/auth/me
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 ### Refresh JWT Token
-POST {{apiUrl}}/refresh
+POST {{apiUrl}}/auth/refresh
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 ### Logout - Invalidate Token
-POST {{apiUrl}}/logout
+POST {{apiUrl}}/auth/logout
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -56,7 +54,7 @@ Content-Type: application/json
 ### ============================================
 
 ### Test: Login with invalid credentials
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -65,7 +63,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with missing login field
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -73,7 +71,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with missing password
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -81,11 +79,11 @@ Content-Type: application/json
 }
 
 ### Test: Access protected route without token
-GET {{apiUrl}}/me
+GET {{apiUrl}}/auth/me
 Content-Type: application/json
 
 ### Test: Access protected route with invalid token
-GET {{apiUrl}}/me
+GET {{apiUrl}}/auth/me
 Authorization: Bearer invalid_token_here
 Content-Type: application/json
 
@@ -94,7 +92,7 @@ Content-Type: application/json
 ### ============================================
 
 ### Test: Login with user_1 email (status = 1) - Should succeed
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -103,7 +101,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with user_1 username (status = 1) - Should succeed
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -112,7 +110,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with user_2 email (status = 0) - Should fail with "User not available"
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -121,7 +119,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with user_2 username (status = 0) - Should fail with "User not available"
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -130,7 +128,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with user_3 email (status = 1) - Should succeed
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {
@@ -139,7 +137,7 @@ Content-Type: application/json
 }
 
 ### Test: Login with user_3 username (status = 1) - Should succeed
-POST {{apiUrl}}/login
+POST {{apiUrl}}/auth/login
 Content-Type: application/json
 
 {

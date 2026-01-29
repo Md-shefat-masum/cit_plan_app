@@ -28,3 +28,9 @@ cit_cpu_git_ssh
 cit_cpu_git_ssh.pub
 *.pem
 *.key
+
+# Task files
+task.txt
+*.zip
+**/*.zip
+token.txt
