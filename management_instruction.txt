@@ -1,25 +1,114 @@
-UserManagement
+next task_sub_plans management
 
-controller: app/Http/Controllers/Management/V1/UserManagement/User/UserController
-actions: app/Http/Actions/UserManagement/User
-route: api.php line 60 prefix: users
+route: /task-sub-plan
+cols:
+    id	
+    task_plan_id	
+    description	
+    time_duration_id	
+    time_sub_duration_id	
+    task_completor_catagory_id	
+    task_completor_sub_category_id	
+    umbrella_department_id	
 
-index_method:
-return
-id, user_role_id, user_role_title (join with user_roles), username, email, creator, creator_name (join with users -> name)
-status, slug, created_at, updated_at
+routes will go under task-management
+    
 
-search by all fields.
+not make seed TaskSubPlanSeeder
 
-store, update
-validation:
-name:required, 50 char max
-username: required, 20 char max,unique users
-user_role_id: required, exists user_roles,
-password: required on create, on update check if request has password then required.
-if password check password_confirmation
-status: 0|1
-creator: auth()->user()->id,
-slug: username
+json explain:
+    {
+        "task_plan_id": "1", task_plan_id
+        "descriptin": "test 1 descriptin",  descriptin
+        "time_duration_id": "দৈনিক",  find form time_durations.title and set id
+        "time_sub_duration_id": "দৈনিক", find form time_sub_durations.title and set id
+        "task_completor_catagory_id": "বিভাগীয় দায়িত্বশীল", find form task_completor_catagories.title and set id
+        "task_completor_sub_category_id": "", find form task_completor_sub_catagories.title and set id
+        "umbrella_department_id": "", find form umbrella_departments.title and set id
+    },
 
-not destroy only soft_delete status = 0.
+
+json:
+[
+  {
+    "task_plan_id": "1",
+    "descriptin": "test 1 descriptin",
+    "time_duration_id": "দৈনিক",
+    "time_sub_duration_id": "দৈনিক",
+    "task_completor_catagory_id": "বিভাগীয় দায়িত্বশীল",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 2 description",
+    "time_duration_id": "সাপ্তাহিক",
+    "time_sub_duration_id": "প্রতি সোমবার",
+    "task_completor_catagory_id": "বিভাগীয় সদস্য",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 3 description",
+    "time_duration_id": "দশক",
+    "time_sub_duration_id": "মাসের ২য় দশক",
+    "task_completor_catagory_id": "বিভাগীয় স্টাফ",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 2 description",
+    "time_duration_id": "পাক্ষিক",
+    "time_sub_duration_id": "মাসের ২য় পক্ষ",
+    "task_completor_catagory_id": "শাখা",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 3 description",
+    "time_duration_id": "মাসিক",
+    "time_sub_duration_id": "মার্চ",
+    "task_completor_catagory_id": "অন্য বিভাগ",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 2 description",
+    "time_duration_id": "দ্বিমাসিক",
+    "time_sub_duration_id": "মার্চ-এপ্রিল",
+    "task_completor_catagory_id": "",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 3 description",
+    "time_duration_id": "ত্রৈমাসিক",
+    "time_sub_duration_id": "মার্চ-মে",
+    "task_completor_catagory_id": "",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "test 2 description",
+    "time_duration_id": "ষান্মাসিক",
+    "time_sub_duration_id": "মার্চ-আগস্ট",
+    "task_completor_catagory_id": "",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  },
+  {
+    "task_plan_id": "2",
+    "descriptin": "বার্ষিক",
+    "time_duration_id": "এপ্রিল",
+    "time_sub_duration_id": "",
+    "task_completor_catagory_id": "",
+    "task_completor_sub_category_id": "",
+    "umbrella_department_id": ""
+  }
+]
