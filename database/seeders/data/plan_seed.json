@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "1",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "অফিসিয়াল সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "2",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "আর্কাইভ সফটওয়্যার (তথ্য বিভাগ) তৈরি করা। (অবশিষ্ট রয়েছে ৪০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": "নতুন"
+  },
+  {
+    "id": "3",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "বিএম বিভাগের সফটওয়্যার ডেভেলপ সম্পন্ন করা। (অবশিষ্ট রয়েছে ১০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "4",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "কেন্দ্রের প্লানিং এক্সিকিউটিং সাইট ডেভেলপ সম্পন্ন করা। (অবশিষ্ট রয়েছে ৫০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "5",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "জনশক্তি প্রশিক্ষণ সফটওয়্যার ডেভেলপ সম্পন্ন করা। (অবশিষ্ট রয়েছে ৫০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "6",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "নিয়মিত রিপোর্ট সংগ্রহ (অফিস বিভাগ) সফটওয়্যার ডেভেলপ করা। (অবশিষ্ট রয়েছে ২০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "7",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "কেন্দ্রের ডিভাইস ম্যানেজমেন্ট সফটওয়্যার তৈরি করা। (অবশিষ্ট রয়েছে ২০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "8",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "প্রকাশনা সফটওয়্যার ফাইনালাইজ করে লাইভে নিয়ে আসা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "9",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "সফর সাইট নতুন করে ডেভেলপ করা। (অবশিষ্ট রয়েছে ২০%)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "10",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "নোটিশ বোর্ড (অফিস বিভাগ) সাইট নতুন আঙ্গিকে তৈরি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "11",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "Youth Wave (সাহিত্য বিভাগ) তৈরি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": "বাতিল"
+  },
+  {
+    "id": "12",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "নতুন কিশোর পত্রিকা (সাহিত্য বিভাগ) ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "13",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রচার বিভাগের নিউজ সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "14",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "সিপি-এসজি ওয়েবসাইট : নতুন সাইট ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "15",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "তথ্যপ্রযুক্তি বিভাগীয় প্ল্যানিং-রিপোর্ট সফটওয়্যার ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "16",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "বিতর্ক সংগঠন (বিতর্ক বিভাগ) সাইট ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "17",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "বিজনেস ম্যাগাজিনের (ব্যবসায় শিক্ষা বিভাগ) সাইট ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "18",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "টেক সোশ্যাল প্লাটফর্মের সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": "নতুন"
+  },
+  {
+    "id": "19",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৪। ইসলামী শিক্ষা আন্দোলন ও ছাত্র সমস্যা সমাধান",
+    "description": "এডুকেশন সাইট ডেভেলপ করা হবে।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "20",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "লাইব্রেরি ২ সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": "নতুন"
+  },
+  {
+    "id": "21",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শাখার জন্য থানা রিপোর্ট সাইট সিস্টেম রেডি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "22",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "শাখা বৃত্তি সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "23",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "শাখা অফিসিয়াল সাইট নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "24",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা কেন্দ্রিক কেন্দ্রের সকল সফটওয়্যার/ওয়েবসাইট নিয়ে একই প্লাটফর্ম/সিস্টেম রেডি করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "25",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের পরিপ্রেক্ষিতে নতুন ওয়েবসাইট তৈরি করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "26",
+    "department_section": "ওয়েব অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "আপডেট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "বর্তমানে চলমান সকল সাইটের প্রয়োজন অনুযায়ী ফিচার আপডেট করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "27",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "লাইব্রেরি অ্যাপটি ফাইনালাইজ করে লাইভে নিয়ে আসা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "28",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ব্যক্তিগত রিপোর্ট অ্যাপ নতুন করে ডেভেলপ করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "29",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "ছাত্রশিবির অ্যাপ তৈরি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "30",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সিলেবাস অ্যাপ নতুন করে তৈরি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "31",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "১। দাওয়াত",
+    "description": "ইয়ুথ লাইফস্টাইল অ্যাপ রেডি করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": "বাতিল"
+  },
+  {
+    "id": "32",
+    "department_section": "মোবাইল অ্যাপ ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের পরিপ্রেক্ষিতে নতুন অ্যাপ তৈরি করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "33",
+    "department_section": "ডেস্কটপ অ্যাপ ডেভেলপমেন্ট\t",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "সনদ টেমপ্লেটের জন্য সফটওয়্যার তৈরি করা হবে।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "34",
+    "department_section": "ডেস্কটপ অ্যাপ ডেভেলপমেন্ট\t",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা-থানার জন্য অফলাইন বিএম সফটওয়্যার তৈরি করা হবে।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "35",
+    "department_section": "ডেস্কটপ অ্যাপ ডেভেলপমেন্ট\t",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শাখার পাঠাগারের জন্য সফটওয়্যার তৈরি করা হবে।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "36",
+    "department_section": "ডেস্কটপ অ্যাপ ডেভেলপমেন্ট\t",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের আলোকে ওয়েব অ্যাপগুলোর ডেস্কটপ ভার্সন রেডি করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "37",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "পর্যবেক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "সকল সাইট নিয়মিত পর্যবেক্ষণের মধ্যে রাখা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "38",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "যখন যে ইস্যু সামনে আসবে তা দ্রুততার সাথে সমাধান করা হবে",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "39",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "প্রপোজাল",
+    "dofa": "২। সংগঠন",
+    "description": "নতুন বা ফিচার আপডেটের জন্য সাইটসমূহের প্রপোজাল তৈরি করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "40",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "রিভিউ",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন সাইটসমূহ রিভিউ করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "41",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "ট্রায়াল",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন সাইটে প্রয়োজন অনুযায়ী ট্রায়াল চালানো হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "42",
+    "department_section": "প্রজেক্ট ম্যানেজমেন্ট",
+    "department_sub_section": "অন্যান্য",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "পরিচিত ডেভলপার হাবগুলোকে সর্বোচ্চ কাজে লাগানো ও নতুন আরো কিছু ডেভলপার ফার্মের সাথে সম্পর্ক বৃদ্ধি করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "43",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ওয়ার্কশপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সেক্রেটারিয়েট ভাইদের নিয়ে ওয়ার্কশপ আয়োজন করা।",
+    "qty": "10",
+    "task_type": "সংখ্যাগত",
+    "task_status": "পরিমার্জন"
+  },
+  {
+    "id": "44",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখা সভাপতি ও সেক্রেটারি ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "45",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখা সেক্রেটারিয়েট ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "46",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সদস্যদের ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "47",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখা সভাপতি ও সেক্রেটারি ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "48",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখা সেক্রেটারিয়েট ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": "নতুন"
+  },
+  {
+    "id": "49",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সদস্যদের ভাইদের নিয়ে কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "50",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "মাইক্রোসফট ও গুগল প্রোডাক্ট কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "51",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "গ্রাফিক্স ডিজাইন কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "52",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ভিডিও এডিটিং কোর্স আয়োজন করা।",
+    "qty": "2",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "53",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ওয়েব ডেভেলপমেন্ট কোর্স আয়োজন করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "54",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "বিশেষ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "অ্যাপ ডেভেলপমেন্ট কোর্স আয়োজন করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "55",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "বিশেষ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সাইবার সিকিউরিটি কোর্স আয়োজন করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "56",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "বিশেষ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "প্রোগ্রামিং কোর্স আয়োজন করা।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "57",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ঢাকার সকল শাখার জনশক্তিদের নিয়ে গ্রাফিক্স ডিজাইন কোর্স আয়োজন করা। (অফলাইন)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "58",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "মাস্টার কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ঢাকার সকল শাখার জনশক্তিদের নিয়ে ভিডিও এডিটং কোর্স আয়োজন করা। (অফলাইন)",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "59",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "অন্যান্য কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বিভাগীয় ভাইদের নিয়ে বেসিক টু অ্যাডভান্স কম্পিউটার প্রশিক্ষণের আয়োজন করা হবে",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "60",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ওয়ার্কশপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "তথ্যপ্রযুক্তি বিভাগের ভাইদের নিয়ে বিভাগীয় কাজের উপর বিশেষ প্রশিক্ষণের আয়োজন করা হবে।",
+    "qty": "10",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "61",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ট্রেনিং আউটলাইন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখার আইসিটি সেন্টারের কোর্স আউটলাইন ও প্রয়োজনীয় ম্যাটারিয়ালস রেডি করা এবং নিয়মিত আপডেট করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "62",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ট্রেনিং আউটলাইন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ন্যূনতম কম্পিউটার বেসিক, কার্যকর ইন্টারনেট ব্যবহার, ডিভাইস সিকিউরিটি এবং আর্টিফিশিয়াল ইন্টেলিজেন্স (এআই) এর যথাযথ ব্যবহার এর আউটলাইন রেডি করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "63",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "আঞ্চলিক ওয়ার্কশপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বাছাইকৃত তথ্য-প্রযুক্তিতে দক্ষ জনশক্তিদের নিয়ে প্রশিক্ষণের (প্রশিক্ষকদের গাইডলাইন) আয়োজন করা; যারা নিজ শাখায় জনশক্তিদের প্রশিক্ষণ দেবেন।",
+    "qty": "16",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "64",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "বিশেষ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখার তথ্যপ্রযুক্তি সম্পাদক ও প্রতিনিধিদের নিয়ে ৩ দিনের প্রশিক্ষণের আয়োজন করা। (৩ গ্রুপে সকল শাখা)",
+    "qty": "3",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "65",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "অন্যান্য",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সেন্ট্রাল ট্রেনিং সেন্টার চালু করার মাধ্যমে সরকারি রেজিস্ট্রেশন বা অনুমোদন নেওয়ার ব্যাপারে অগ্রসর হওয়া।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "66",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ভিডিও কন্টেন্ট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "টপিকভিত্তিক কোর্সের ভিডিও কন্টেন্ট রেডি করা।",
+    "qty": "20",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "67",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ওয়ার্কশপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "প্রতিমাসে ২টি করে টপিকভিত্তিক অনলাইন ওয়ার্কশপের আয়োজন রাখা।",
+    "qty": "20",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "68",
+    "department_section": "আইটি ট্রেনিং",
+    "department_sub_section": "ক্র্যাশ কোর্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "পূর্বের ক্র্যাশ কোর্সসমূহে উত্তীর্ণ ভাইদের সার্টিফিকেট প্রদান করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "69",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "ডকুমেন্টস",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সোশ্যাল মিডিয়া সিস্টেম সংক্রান্ত ডকুমেন্টস তৈরি করা হবে।",
+    "qty": "3",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "70",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "ডকুমেন্টস",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সিকিউরিটি সিস্টেম নিয়ে অনলাইন বুকলেট তৈরি করা হবে।",
+    "qty": "1",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "71",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "ডকুমেন্টস",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "তথ্য-প্রযুক্তি সংক্রান্ত আলোচনা নোট তৈরি করা হবে।",
+    "qty": "10",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "72",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "টিপস-ট্রিক্স",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ইউজফুল সাইট এবং অ্যাপের পরিচিতি ও ব্যবহারসহ বিভিন্ন বিষয়ে প্রয়োজনীয় টিপস-ট্রিকস শেয়ার করা হবে।",
+    "qty": "100",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "73",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "প্রেজেন্টেশন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখার জন্য বিভিন্ন টপিকের প্রেজেন্টেশন রেডি ও আপডেট করা হবে।",
+    "qty": "15",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "74",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "প্রেজেন্টেশন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "জনশক্তি ও দায়িত্বশীলদের প্রদান করার জন্য প্রেজেন্টেশন তৈরি করা হবে।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "75",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "প্রেজেন্টেশন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ক্র্যাশ কোর্সের ক্লাশের জন্য বিভিন্ন প্রেজেন্টেশন আপডেট করা হবে।",
+    "qty": "20",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "76",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "ভিডিও",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বিভিন্ন ট্রিকসের শর্ট ভিডিও তৈরি করা হবে।",
+    "qty": "30",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "77",
+    "department_section": "টেক ম্যাটারিয়ালস",
+    "department_sub_section": "সফটওয়্যার",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "আপডেট সফটওয়্যার কালেকশন করা হবে। জনশক্তি ও দায়িত্বশীলদের প্রয়োজন অনুযায়ী সফটওয়্যার প্রোভাইড করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "78",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ওয়েবসাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ওয়েবসাইট নতুন আঙ্গিকে সাজানো হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "79",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ওয়েবসাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ওয়েবসাইটকে বেস্ট টেক সাইট হিসেবে প্রতিষ্ঠিত করার জন্য নানামুখী তৎপরতা চালানো হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "80",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ওয়েবসাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ব্লগ অপশন চালু করা।",
+    "qty": "উদ্দেশ্যভিত্তিক",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "81",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ওয়েবসাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সাইটে পোস্টের জন্য ১০ জনের টিম রেডি করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "82",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ফেসবুক পেইজ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "পেইজ ফলোয়ার বৃদ্ধি করা। (টার্গেট- ৫ লক্ষে পৌঁছানো)",
+    "qty": "500,000",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "83",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ফেসবুক পেইজ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "এনগেজমেন্ট ও রিচ বাড়ানোর লক্ষ্যে কার্যকর পদক্ষেপ নেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "84",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ফেসবুক গ্রুপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "ফেসবুক গ্রুপকে সর্বস্তরে পৌঁছানোর ব্যাপারে উদ্যোগ নিয়ে বাস্তবায়ন করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "85",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ফেসবুক গ্রুপ",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "গ্রুপ পরিচালনার নীতিমালা প্রণয়ন করে তা কার্যকর করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "86",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "টেলিগ্রাম চ্যানেল",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "চ্যানেল সমৃদ্ধ করার লক্ষ্যে কার্যকর পদক্ষেপ দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "87",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ইউটিউব চ্যানেল",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "মাসে ন্যূনতম ৫টি করে ভিডিও চ্যানেলে আপলোড করা হবে।",
+    "qty": "50",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "88",
+    "department_section": "টেক সোশ্যাল প্লাটফর্ম",
+    "department_sub_section": "ইউটিউব চ্যানেল",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "চ্যানেল সমৃদ্ধ করার লক্ষ্যে কার্যকর পদক্ষেপ দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "89",
+    "department_section": "সার্ভিসিং",
+    "department_sub_section": "ডিভাইস সার্ভিসিং",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে ডিভাইস সার্ভিসিং করে দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "90",
+    "department_section": "সার্ভিসিং",
+    "department_sub_section": "অনলাইন সার্ভিস",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন অনলাইন সাপোর্ট প্রদান করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "91",
+    "department_section": "সার্ভিসিং",
+    "department_sub_section": "সার্ভিস টু দ্যা ডোর",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন বিভাগে গিয়ে টেকনিক্যাল সাপোর্ট প্রদান করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "92",
+    "department_section": "সার্ভিসিং",
+    "department_sub_section": "সোশ্যাল মিডিয়া সাপোর্ট",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে সোশ্যাল মিডিয়া কেন্দ্রিক সমস্যার সমাধান করে দেওয়া।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "93",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "ডকুমেন্টেশন",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "কমন সমস্যাগুলোর সমাধানের ডকুমেন্টশন তৈরি করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "94",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "এক্সেল/শীট",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে এক্সেলের/শীটের কাজ করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "95",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "গুগল ফর্ম",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন বিভাগকে গুগল ফর্ম তৈরি করে দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "96",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "প্রেজেন্টেশন",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে প্রেজেন্টেশন তৈরি করে দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "97",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "ব্রডকাস্টিং",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন প্রোগ্রামে ব্রডকাস্টিং সাপোর্ট দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "98",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "প্রোগ্রাম বাস্তবায়ন",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজন ও চাহিদার আলোকে বিভিন্ন প্রোগ্রাম বাস্তবায়নের টেকনিক্যাল সাপোর্ট প্রদান করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "99",
+    "department_section": "টেকনিক্যাল সাপোর্ট",
+    "department_sub_section": "অন্যান্য",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজন ও চাহিদার আলোকে বিভিন্ন বিষয়ে কেন্দ্র ও শাখাকে টেকনিক্যাল সাপোর্ট প্রদান করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "100",
+    "department_section": "পারচেজ",
+    "department_sub_section": "ডিভাইস",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন বিভাগের প্রয়োজনের আলোকে অনুমোদনক্রমে ডিভাইস ক্রয় করে দেওয়া হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "101",
+    "department_section": "পারচেজ",
+    "department_sub_section": "এক্সেসরিজ",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে ইলেক্ট্রনিক এক্সেসরিজ ক্রয় করা হবে।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "102",
+    "department_section": "পারচেজ",
+    "department_sub_section": "অনলাইন",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে ডিজিটাল বিভিন্ন একাউন্ট/প্যাকেজ ক্রয় করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "103",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "অনলাইন পোস্টার",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন অনলাইন পোস্টার/স্টিকার ডিজাইন করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "104",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "ক্যাম্পেইন স্টিকার",
+    "dofa": "২। সংগঠন",
+    "description": "সোশ্যাল মিডিয়া বিভাগের বিভিন্ন ক্যাম্পেইনে সহযোগিতা করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "105",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "ক্রেস্ট/সার্টিফিকেট",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজনের আলোকে ক্রেস্ট/সার্টিফিকেট ডিজাইন করা",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "106",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "ব্যানার",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন কর্মসূচির ব্যানার ডিজাইন করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "107",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "টাইপোগ্রাফি",
+    "dofa": "২। সংগঠন",
+    "description": "নিয়মিত বিভিন্ন ইস্যুতে টাইপোগ্রাফি করা ও লোগো ডিজাইন করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "108",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "ফটো এডিট",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন ছবি এডিট করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "109",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "প্রোফাইল ফটো/কভার",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন সোশ্যাল মিডিয়া প্লাটফর্মের প্রোফাইল ফটো/কভার তৈরি করা",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "110",
+    "department_section": "ডিজাইন প্রোডাকশন",
+    "department_sub_section": "কেন্দ্রীয় টিম",
+    "dofa": "২। সংগঠন",
+    "description": "কেন্দ্রের ৫ জনের টিম তৈরি করা ও নিয়মিত কার্যক্রম পরিচালনা করা হবে",
+    "qty": "5",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "111",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "আর্কাইভ ভিডিও",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন সময়ের আর্কাইভের ভিডিও এডিট করে প্রচার উপযোগী করা।",
+    "qty": "নিয়মিত কাজ",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "112",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "প্রমো ভিডিও",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন মাসিক পত্রিকার প্রমো ভিডিও তৈরি করা।",
+    "qty": "40",
+    "task_type": "সংখ্যাগত",
+    "task_status": ""
+  },
+  {
+    "id": "113",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "প্রমো ভিডিও",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন কর্মসূচির প্রমো ভিডিও তৈরি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "114",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "লিরিক্যাল ভিডিও",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন গান ও কবিতার লিরিক্যাল ভিডিও তৈরি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "115",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ভিডিও এডিটিং",
+    "dofa": "২। সংগঠন",
+    "description": "র ভিডিও ফুটেজ থেকে প্রয়োজন অনুযায়ী ভিডিও এডিটিং করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "116",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ভিডিও মেকিং",
+    "dofa": "২। সংগঠন",
+    "description": "প্রতিমাসে অন্তত ১৫টি শর্ট ভিডিও রেডি করা",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "117",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ডকুমেন্টারি",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন ইস্যুভিত্তিক ডকুমেন্টারি রেডি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "118",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ভিডিও বুক",
+    "dofa": "২। সংগঠন",
+    "description": "অডিও বুককে আকর্ষণীয় উপায়ে ভিডিও বুক হিসেবে তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "119",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "কেন্দ্রীয় টিম",
+    "dofa": "২। সংগঠন",
+    "description": "কেন্দ্রের ৫ জনের টিম তৈরি করা ও নিয়মিত কার্যক্রম পরিচালনা করা হবে",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "120",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ভিডিও মেকিং",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "টেক রিলেটেড প্রয়োজনীয় তথ্য ও ট্রিপস-ট্রিক্সের ভিডিও তৈরি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "121",
+    "department_section": "ভিডিও প্রোডাকশন",
+    "department_sub_section": "ভিডিও মেকিং",
+    "dofa": "২। সংগঠন",
+    "description": "ছাত্রশিবিরকে প্রমোট করার উদ্দ্যেশ্যে বিভিন্ন দাওয়াতি ভিডিও ও শর্টস তৈরি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "122",
+    "department_section": "UI/UX প্রোডাকশন",
+    "department_sub_section": "ডিজাইন",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন নতুন সাইট ও অ্যাপের লুকিং ডিজাইন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "123",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "সফট কপি",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সিলেবাসের যেসব বইয়ের সফটকপি নেই সেগুলো তৈরির ব্যবস্থা করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "124",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "সফট কপি",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "আপডেট প্রকাশিত বইয়ের তালিকা প্রকাশনা বিভাগের সাথে সমন্বয় করে সংগ্রহ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "125",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "সফট কপি",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "নিয়মিত বইয়ের লিংকআপ ও বুকমার্ক যোগ করা।",
+    "qty": "30",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "126",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "অডিও বুক",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বিভিন্ন বইয়ের অডিও বুক তৈরি করা হবে।",
+    "qty": "100",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "127",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ১ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "প্রতি মাসে কমপক্ষে ৫জন লেখক পরিচিতি সাইটে যুক্ত করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "128",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ১ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সোশ্যাল মিডিয়া বট ম্যাসেঞ্জার তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "129",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ১ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সকল শাখার স্বারক সংগ্রহ করে সাইটে আনা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "130",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ১ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "দারসুল কুরআন ও হাদিস, আর্টিকেল প্রতিমাসে ১০টি সাইটে যুক্ত করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "131",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ২ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "সাইটে নিয়মিত বই আপলোড করা হবে।",
+    "qty": "500",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "132",
+    "department_section": "অনলাইন লাইব্রেরি",
+    "department_sub_section": "লাইব্রেরি ২ সাইট",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "প্রতি মাসে কমপক্ষে ৫জন লেখক পরিচিতি সাইটে যুক্ত করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "133",
+    "department_section": "সার্ভার ম্যানেজমেন্ট",
+    "department_sub_section": "ডকুমেন্টেশন",
+    "dofa": "২। সংগঠন",
+    "description": "সার্ভার ম্যানেজমেন্টের সকল বিষয়ের ডকুমেন্টশন তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "134",
+    "department_section": "সার্ভার ম্যানেজমেন্ট",
+    "department_sub_section": "পর্যালোচনা",
+    "dofa": "২। সংগঠন",
+    "description": "বর্তমান সার্বিক সার্ভার ব্যবস্থাপনা নিয়ে পর্যালোচনা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "135",
+    "department_section": "সার্ভার ম্যানেজমেন্ট",
+    "department_sub_section": "ম্যানেজমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "সার্ভার ও ডোমেইন রিনিউ এর বিষয়ে নিয়মিত তদারকি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "136",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "তথ্য সংরক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "কার্যকরী পরিষদ সদস্যদের ডিভাইস কেন্দ্রীক তথ্যসমূহ সংগ্রহ করে সংরক্ষণ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "137",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "তথ্য সংরক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "বিভাগীয় সদস্য ভাইদের ডিভাইস কেন্দ্রীক তথ্য সংগ্রহ করে সংরক্ষন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "138",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "সিকিউরিটি স্টেপ",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজন অনুযায়ী বিভিন্ন সিকিউরিটি স্টেপ নেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "139",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "সাইবার সিকিউরিটি সপ্তাহ পালন করা হবে যেখানে সকল জনশক্তিকে সিকিউরিটি বিষয় ভালোভাবে বোঝানো হবে এবং শিখিয়ে দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "140",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "সাইবার সিকিউরিটি কোর্স আয়োজনের মাধ্যমে দক্ষ ইথিক্যাল হ্যাকার তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "141",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "২। সংগঠন",
+    "description": "সিকিউরিটি নিশ্চিত করার জন্য একটি বুকলেট/গাইডলাইন তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "142",
+    "department_section": "সিকিউরিটি",
+    "department_sub_section": "সাপোর্ট",
+    "dofa": "২। সংগঠন",
+    "description": "প্রয়োজন অনুযায়ী বিভিন্ন ক্ষেত্রে সিকিউরিটি সাপোর্ট প্রদানের চেষ্টা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "143",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "বিভিন্ন সাংগঠনিক সিস্টেমকে প্রযুক্তির আলোকে সহজ ও যুগপোযোগী করে তোলার চেষ্টা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "144",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "রিসার্চ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "এআই এর বিভিন্ন ব্যবহার নিয়ে নিয়মিত রিসার্চ চালিয়ে যাওয়া,ফাইন্ডিংস নিয়ে পর্যালোচনা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "145",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "রিসার্চ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "বিভিন্ন রিনাউন্ড সফটওয়্যার বা প্লাটফর্মের আপডেটগুলো সম্পর্কে নিয়মিত জানা এবং প্রয়োগ করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "146",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "রিসার্চ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "নতুন টেকনোলজি ও গেজেট নিয়ে পর্যালোচনা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "147",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "রিসার্চ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ইউজফুল অ্যাপস ও সাইট খুজে বের করে কাজে লাগানোর চেষ্টা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "148",
+    "department_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "department_sub_section": "রিসার্চ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "সময় ও পরিস্থিতির আলোকে বিভিন্ন সমস্যার কারণ খোঁজা ও তার সমাধান করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "149",
+    "department_section": "টেক টিম",
+    "department_sub_section": "অবকাঠামো",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "শাখা টিম থেকে বাছাইকৃত ও পরীক্ষিত ভাইদের নিয়ে ১০টি ক্যাটাগরিভিত্তিক কেন্দ্রীয় টিম গঠন ও আপডেট করা হবে। প্রতি ক্যাটাগরিতে এ বছর ১৫ জন করে ডেডিকেটেড দক্ষ জনশক্তি তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "150",
+    "department_section": "টেক টিম",
+    "department_sub_section": "মেন্টরিং টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ক্যাটাগরিভিত্তিক দক্ষ এবং প্রফেশনাল ফিল্ডের সাবেক ভাইদের নিয়ে মেন্টরিং টিম গঠন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "151",
+    "department_section": "টেক টিম",
+    "department_sub_section": "অবকাঠামো",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ক্যাটাগরিভিত্তিক প্রতিটি টিমের সেটাপ দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "152",
+    "department_section": "টেক টিম",
+    "department_sub_section": "প্রোগ্রাম/কর্মসূচি",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রতি মাসে টেক টিমের সদস্যদের নিয়ে আড্ডামূলক প্রোগ্রাম করা হবে।",
+    "qty": "12",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "153",
+    "department_section": "টেক টিম",
+    "department_sub_section": "প্রোগ্রাম/কর্মসূচি",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রত্যেক টিমের মাসিক ২টি করে প্রোগ্রাম বাস্তবায়নে করা হবে। টিম মিটিং এবং টেক সার্কেল।",
+    "qty": "24",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "154",
+    "department_section": "টেক টিম",
+    "department_sub_section": "ওয়ার্কশপ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের আলোকে টিমভিত্তিক ওয়ার্কশপ আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "155",
+    "department_section": "টেক টিম",
+    "department_sub_section": "ট্রেইনার",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "শাখা টিম প্রশিক্ষণ দেওয়ার জন্য টেক টিমের সদস্যদের উপযুক্ত করে তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "156",
+    "department_section": "টেক টিম",
+    "department_sub_section": "রিসার্চ এন্ড ডেভেলপমেন্ট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রতিটি টিমে নিজ নিজ টপিক সংক্রান্ত গবেষণা এবং নানামুখী ট্রায়াল করে কার্যকর ফাইন্ডিংস বের করবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "157",
+    "department_section": "টেক টিম",
+    "department_sub_section": "টিম ওয়ার্ক",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "টেক টিমের সদস্যদের নিয়মিত বিভিন্ন কাজ দিয়ে কাজ আদায় করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "158",
+    "department_section": "টেক টিম",
+    "department_sub_section": "প্রোগ্রাম/কর্মসূচি",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ক্যাটাগরিভিত্তিক টপিক নিয়ে রেজিস্ট্রেশন করে অনলাইনে সেমিনারের আয়োজন করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "159",
+    "department_section": "টেক টিম",
+    "department_sub_section": "প্রকৌশল টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রকৌশল বিশ্ববিদ্যালয়ের সদস্যদের আইটির বিভিন্ন নিয়মিত কাজে লাগানো হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "160",
+    "department_section": "টেক টিম",
+    "department_sub_section": "সিএসই টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "শাখাগুলোর অভিজ্ঞ সিএসই পড়ুয়া সদস্য-সাথীদের নিয়ে ডিসকাশন গ্রুপ চালু করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "161",
+    "department_section": "টেক টিম",
+    "department_sub_section": "বিশেষ টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "সাবেক বর্তমানদের সমন্বয়ে ওপেন নেটওয়ার্কিং প্লাটফর্ম তৈরি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "162",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "ওয়েবসাইট SEO",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "কেন্দ্রীয় সকল বিভাগের চলমান সাইটসমূহের SEO সম্পন্ন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "163",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "ওয়েবসাইট SEO",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "SEO সম্পন্নকৃত সাইট নিয়মিত পর্যবেক্ষণ করা হবে এবং প্রয়োজন অনুযায়ী ব্যবস্থা নেওয়া।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "164",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "Youtube SEO",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "সকল বিভাগের ইউটিউব চ্যানেলসমূহের SEO সম্পন্ন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "165",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "সোশ্যাল মিডিয়া অডিট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ফেসবুক ও অন্যান্য সোশ্যাল মিডিয়া প্লাটফর্মসমূহ অডিট করা হবে এবং পরামর্শ দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "166",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "সোশ্যাল মিডিয়া অডিট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "অফিসিয়াল সোশ্যাল মিডিয়া প্লাটফর্মসমূহ প্রতি মাসেই পর্যবেক্ষণ করে পরামর্শ প্রদান করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "167",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "পেইড মার্কেটিং",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন প্লাটফর্মের পেইড মার্কেটিং করে দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "168",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "রিটার্গেটিং মার্কেটিং",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "Email, Whatsapp & Number মার্কেটিং এর জন্য সেন্ট্রাল ডেটা হাভ তৈরি করে রিটার্গেটিং মার্কেটিং করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "169",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "ডকুমেন্টেশন",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "ডিজিটাল মার্কেটিং এর গুরুত্বপূর্ণ বিষয়সমূহের নোট করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "170",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "বিভিন্ন ডকুমেন্ট, ভিডিও ও নোট বিভাগসমূহের প্লাটফর্মেরসমূহের জন্য শেয়ার করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "171",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রয়োজনের আলোকে বিভিন্ন প্লাটফর্মের ম্যানেজারদের নিয়ে মিটিং করে প্রয়োজনীয় বিষয়সমূহ শেখানো হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "172",
+    "department_section": "ডিজিটাল মার্কেটিং",
+    "department_sub_section": "কেন্দ্রীয় টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "৫ জনের কেন্দ্রীয় টিম তৈরি করা হবে।",
+    "qty": "5",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "173",
+    "department_section": "ডাটা প্রসেসিং",
+    "department_sub_section": "ডাটা কালেকশন",
+    "dofa": "২। সংগঠন",
+    "description": "বিভিন্ন বিষয়ের সংখ্যা তাত্ত্বিক ডাটা সংগ্রহ করে সাজিয়ে রাখা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "174",
+    "department_section": "ডাটা প্রসেসিং",
+    "department_sub_section": "ডাটা সাপ্লাই",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা ও কেন্দ্রের ষাণ্মাসিক-বার্ষিক রিপোর্ট থেকে প্রয়োজন অনুযায়ী বিভিন্ন বিভাগকে ডাটা সরবরাহ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "175",
+    "department_section": "ডাটা প্রসেসিং",
+    "department_sub_section": "ডাটা অ্যানালাইসিস",
+    "dofa": "২। সংগঠন",
+    "description": "চাহিদার আলোকে বিভিন্ন বিষয়ে পূর্বের কয়েক বছরের ডাটা এনালাইসিস করে দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "176",
+    "department_section": "ডাটা প্রসেসিং",
+    "department_sub_section": "ডাটা অ্যানালাইসিস",
+    "dofa": "২। সংগঠন",
+    "description": "পূর্বের ডাটা অ্যানালাইসিসের জন্য কমন কিছু প্যাটার্ন রেডি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "177",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "ডকুমেন্টেশন",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "আইটিতে প্রফেশনাল আউটপুটের ক্ষেত্রগুলো চিহৃইত করে বিস্তারিত  আউটলাইন এবং তথ্য-নির্দেশিকা তৈরী করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "178",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "ক্যারিয়ার গঠন",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "আইটিতে ক্যারিয়ার গড়তে আগ্রহীদের লিস্ট সংগ্রহ করা ও ডাটাবেইজ তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "179",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "ক্যারিয়ার গঠন",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "আইটি ফার্মসমূহের সাথে তালিকা করে যোগাযোগ ও সম্পর্ক উন্নয়ন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "180",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "আউটপুট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "সাবেক জনশক্তিদের টেক ফিল্ড বাছাই ও প্রয়োজনের আলোকে জবের সুযোগ তৈরি করে দেওয়া।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "181",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "আউটপুট",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "আইটিতে অভিজ্ঞ এবং সাবেক দক্ষ ভাইদের সাথে যোগাযোগ করে তাদেরকে উপযুক্ত সেক্টরে কাজে লাগানো হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "182",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "জনশক্তিদের টেকনোলজিতে ক্যারিয়ার গড়তে উদ্বুদ্ধ ২টি সেমিনার আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "183",
+    "department_section": "টেক ক্যারিয়ার",
+    "department_sub_section": "প্রশিক্ষণ",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "শাখার আইসিটি সেন্টারে ক্যারিয়ার ওরিয়েন্টেড প্রশিক্ষণ দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "184",
+    "department_section": "ইনভেন্টরি",
+    "department_sub_section": "ম্যানেজমেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "নির্ধারিত ফরম্যাট মেইনটেইন করে সকল নতুন ও ইউজড প্রোডাক্ট বা ডিভাইসের ট্র্যাকিং নিশ্চিত করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "185",
+    "department_section": "ডিজিটাল কন্টেন্ট",
+    "department_sub_section": "কন্টেন্ট স্ট্র্যাটেজি",
+    "dofa": "২। সংগঠন",
+    "description": "প্রচার ও সোশ্যাল মিডিয়া বিভাগের সাথে সম্বন্বয় করে প্রতি মাসের কন্টেন্ট ক্যালেন্ডার তৈরি করে কাজ করা",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "186",
+    "department_section": "ডিজিটাল কন্টেন্ট",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "কেন্দ্রীয় সকল প্লাটফর্মসমূহ তত্ত্বাবধানের আওতায় আনা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "187",
+    "department_section": "ডিজিটাল কন্টেন্ট",
+    "department_sub_section": "সহযোগিতা",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্লাটফর্মসমূহে নিত্যনতুন মান সম্মত কন্টেন্ট তৈরির ব্যাপারে সর্বাত্মক প্রচেষ্টা সহযোগিতা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "188",
+    "department_section": "ডিজিটাল কন্টেন্ট",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "শাখাগুলোকে ডিজিটাল কন্টেন্ট তৈরির ব্যাপারে মোটিভেশন চালানো হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "189",
+    "department_section": "অ্যানিমেশন",
+    "department_sub_section": "টিম",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "দক্ষ ও আগ্রহী জনশক্তিদের তালিকা করে স্কিল বৃদ্ধিতে কাজ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "190",
+    "department_section": "অ্যানিমেশন",
+    "department_sub_section": "কন্টেন্ট তৈরি",
+    "dofa": "১। দাওয়াত",
+    "description": "অ্যানিমেটেড দাওয়াতি কার্টুন তৈরি করা হবে।",
+    "qty": "5",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "191",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা আইটি সম্পাদকদের নিয়ে শাখার ক্যাটাগরিভিত্তিক টিজি গ্রুপ তৈরি করা হবে এবং সার্বিক কার্যক্রম এর মাধ্যমে পরিচালিত হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "192",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "শাখা টিম",
+    "dofa": "২। সংগঠন",
+    "description": "শাখাগুলোতে ১০টি ক্যাটাগরিতে আইটি টিম গঠন নিশ্চিত করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "193",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "শাখা টিম",
+    "dofa": "২। সংগঠন",
+    "description": "গঠিত টিমসমূহকে নানামুখী কার্যক্রমের মাধ্যমে এক্টিভ ও তত্ত্বাবধান করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "194",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "শাখা টিম",
+    "dofa": "২। সংগঠন",
+    "description": "শাখার ক্যাটাগরির ভিত্তিতে পর্যায়ক্রমে আইটির কাজ বৃদ্ধির ব্যাপারে জোরদার ব্যবস্থা নেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "195",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "ওয়ার্কশপ",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা তথ্য-প্রযুক্তি সম্পাদকদের নিয়ে অনলাইনে ও অফলাইনে ওয়ার্কশপের আয়োজন করা।",
+    "qty": "2",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "196",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "সফর",
+    "dofa": "২। সংগঠন",
+    "description": "অঞ্চলভিত্তিক সফর দেওয়া হবে।",
+    "qty": "16",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "197",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "২। সংগঠন",
+    "description": "ক্যাটাগরিভিত্তিক ২ মাস পর পর তথ্য-প্রযুক্তি সম্পাদকদের নিয়ে প্রযুক্তি আড্ডা প্রোগ্রাম করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "198",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "আইসিটি সেন্টার",
+    "dofa": "২। সংগঠন",
+    "description": "শাখায় আইসিটি সেন্টার খোলার ব্যাপারে তত্ত্বাবধান ও সহযোগিতা প্রদান করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "199",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "শাখা টিম",
+    "dofa": "২। সংগঠন",
+    "description": "সদস্য শাখাসমূহের আইটি টিমের ভাইদের নিয়ে পরিকল্পিতভাবে শাখাভিত্তিক অনলাইন ও অফলাইনে বসা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "200",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "শাখা টিম",
+    "dofa": "২। সংগঠন",
+    "description": "ক্যাটাগরিভিত্তিক শাখা টিমের সদস্যদের নিয়ে সমাবেশ আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "201",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "২। সংগঠন",
+    "description": "প্রতি মাসে শাখা রিপোর্ট গ্রহণ ও পর্যালোচনা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "202",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "শাখা আইটি সম্পাদকদের আইটির বিভিন্ন বিষয়ে প্রশিক্ষণ দেওয়ার লক্ষ্যে ওয়ার্কশপের আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "203",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "২। সংগঠন",
+    "description": "শাখাভিত্তিক আইটির কাজ বৃদ্ধির লক্ষ্যে শাখায় পর্যাপ্ত সহযোগীতা প্রদান ও তত্ত্বাবধান করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "204",
+    "department_section": "শাখা তত্ত্বাবধান",
+    "department_sub_section": "তত্ত্বাবধান",
+    "dofa": "২। সংগঠন",
+    "description": "শাখা আইটি সম্পাদকসহ শাখা দায়িত্বশীলদের সাথে যোগাযোগ বৃদ্ধি করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "205",
+    "department_section": "রিপোর্ট সফটওয়্যার",
+    "department_sub_section": "রিপোর্ট সফটওয়্যার",
+    "dofa": "২। সংগঠন",
+    "description": "সম্পূর্ণ সফটওয়্যারের আপডেটের রিভিউ তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "206",
+    "department_section": "রিপোর্ট সফটওয়্যার",
+    "department_sub_section": "রিপোর্ট সফটওয়্যার",
+    "dofa": "২। সংগঠন",
+    "description": "নিয়মিত আপডেট কার্যক্রম চলমান থাকবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "207",
+    "department_section": "প্রশিক্ষণ সাইট",
+    "department_sub_section": "কন্টেন্ট মেকিং",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "প্রতি মাসে অন্তত ৫টি কন্টেন্ট তৈরি করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "208",
+    "department_section": "প্রশিক্ষণ সাইট",
+    "department_sub_section": "কন্টেন্ট মেকিং",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বিভিন্ন বিভাগ থেকে প্রশিক্ষন সাইট এর উপযুক্ত কন্টেন্ট সংগ্রহ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "209",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "কেন্দ্রে শহীদদের যে সকল তথ্য সংগ্রহে নেই সেই তালিকা শাখা সমূহে পাঠানো হবে এবং সংগ্রহ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "210",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শহীদ সাইটের ডেভলপমেন্ট এবং কন্টেন্ট এর রিভিউ করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "211",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "রিভিউ অনুযয়ী যে সকল সমস্যা পরিলক্ষিত হয় তা সংশোধন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "212",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শহীদ সংক্রান্ত যেসকল স্মারক সংগ্রহে আছে তা সইটে আপলোড করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "213",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শহীদ সংক্রান্ত সকল স্মারক শাখা সমূহ থেকে সংগ্রহ করা হবে এবং সইটে আপলোড করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "214",
+    "department_section": "শহীদ সাইট",
+    "department_sub_section": "কন্টেন্ট",
+    "dofa": "২। সংগঠন",
+    "description": "শহীদ সংক্রান্ত সকল ছবি, ভিডিও, ভিডিওলিংক, পোস্টার ব্যনারসহ সংগ্রহে থাকা সকল প্রকার ডুকুমেন্টস আপলোড করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "215",
+    "department_section": "আর্টিকেল",
+    "department_sub_section": "আর্টিকেল",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "প্রতি মাসে ১০০০টি আর্টিকেল আপলোড করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "216",
+    "department_section": "আইটিউব",
+    "department_sub_section": "আইটিউব",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "সাবেক দায়িত্বশীল ও কেন্দ্রের পরামর্শের আলোকে উদ্দেশ্য ও বাস্তবতা পুনরায় পর্যালোচনা করে সিদ্ধান্ত গ্রহণ করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "217",
+    "department_section": "অর্থ",
+    "department_sub_section": "সম্পদ",
+    "dofa": "২। সংগঠন",
+    "description": "সম্পদ তালিকা নিয়মিত আপডেট করা হবে এবং অন্য বিভাগের জন্য ডিভাইস কিনে সে বিভাগে ট্রান্সফার দেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "218",
+    "department_section": "অর্থ",
+    "department_sub_section": "শাখা",
+    "dofa": "২। সংগঠন",
+    "description": "শাখাকে দেওয়া ডোমেইন ও সার্ভারের বিল নেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "219",
+    "department_section": "রিপোর্টিং",
+    "department_sub_section": "রিপোর্টিং",
+    "dofa": "২। সংগঠন",
+    "description": "সকল প্রজেক্টের রিপোর্ট আপডেট করা। নিয়মিত রিপোর্ট গ্রহণ ও পর্যালোচনা করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "220",
+    "department_section": "রিপোর্টিং",
+    "department_sub_section": "রিপোর্টিং",
+    "dofa": "২। সংগঠন",
+    "description": "সেকশন অনুযায়ী রিপোর্টিং সিস্টেম ডেভেলপ করা।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "221",
+    "department_section": "ব্যাকআপ",
+    "department_sub_section": "ব্যাকআপ",
+    "dofa": "২। সংগঠন",
+    "description": "প্রতিমাসে ২ বার প্রজেক্টসমূহের ব্যাকআপ নেওয়া হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "222",
+    "department_section": "স্প্রিচুয়াল ট্রেনিং",
+    "department_sub_section": "স্প্রিচুয়াল ট্রেনিং",
+    "dofa": "৩। প্রশিক্ষণ",
+    "description": "বিভাগীয় সদস্যদের নিয়ে প্রতি মাসে ১ দিন শববেদারির আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "223",
+    "department_section": "অন্যান্য",
+    "department_sub_section": "অন্যান্য",
+    "dofa": "৫। ইসলামী সমাজ বিনির্মাণ",
+    "description": "তথ্যপ্রযুক্তি সপ্তাহ/উৎসব পালন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  },
+  {
+    "id": "224",
+    "department_section": "অন্যান্য",
+    "department_sub_section": "অন্যান্য",
+    "dofa": "১। দাওয়াত",
+    "description": "আইসিটি অলিম্পিয়াড আয়োজন করা হবে।",
+    "qty": "",
+    "task_type": "",
+    "task_status": ""
+  }
+]
