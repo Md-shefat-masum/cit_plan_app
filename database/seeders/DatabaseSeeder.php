@@ -16,9 +16,26 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            RoleSeeder::class,
-            UserSeeder::class,
+            // RoleSeeder::class,
+            // UserSeeder::class,
+            // DepartmentSeeder::class,
+            // DepartmentSectionSeeder::class,
+            // DepartmentSubSectionSeeder::class,
+            // DofaSeeder::class,
+            // TaskTypesSeeder::class,
+            // TaskStatusSeeder::class,
+
+            // TimeDurationSeeder::class,
+            // TaskCompletorCategorySeeder::class,
+            // TaskCompletorSubCategorySeeder::class,
+
+            // PlanSeeder::class,
+            // TaskSubPlanSeeder::class,
             // AppModuleRegisterSeeder::class,
+
+            // TaskSubPlanSeeder::class,
+            
+
         ]);
     }
 }
