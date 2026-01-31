@@ -1,0 +1,91 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/task-management/time-duration
+@token = 
+
+GET {{apiUrl}}?paginate=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all time durations with search filter
+GET {{apiUrl}}?search=
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all time durations with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific time duration by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new time duration (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Daily",
+    "status": 1
+}
+
+### Update a time duration
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Weekly",
+    "status": 1
+}
+
+### Soft delete a time duration
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore a time duration
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete a time duration (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import time durations
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {"title": "Daily", "status": 1},
+        {"title": "Weekly", "status": 1},
+        {"title": "Monthly", "status": 1}
+    ]
+}
+
+### Get analytics
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json

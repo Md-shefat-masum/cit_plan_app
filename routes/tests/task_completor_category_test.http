@@ -1,0 +1,91 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/task-management/task-completor-categories
+@token = 
+
+GET {{apiUrl}}?paginate=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all task completor categories with search filter
+GET {{apiUrl}}?search=
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all task completor categories with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific task completor category by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new task completor category (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Individual",
+    "status": 1
+}
+
+### Update a task completor category
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Team",
+    "status": 1
+}
+
+### Soft delete a task completor category
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore a task completor category
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete a task completor category (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import task completor categories
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {"title": "Individual", "status": 1},
+        {"title": "Team", "status": 1},
+        {"title": "Department", "status": 1}
+    ]
+}
+
+### Get analytics
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json

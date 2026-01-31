@@ -1,0 +1,90 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/dofa
+@token = 
+
+GET {{apiUrl}}?per_page=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all dofas with search filter
+GET {{apiUrl}}?search=
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all dofas with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific dofa by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new dofa (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Example",
+    "status": 1
+}
+
+### Update a dofa
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Updated",
+    "status": 1
+}
+
+### Soft delete a dofa
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore a dofa
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete a dofa (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import dofas
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {"title": "Item 1", "status": 1},
+        {"title": "Item 2", "status": 1}
+    ]
+}
+
+### Get analytics
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json

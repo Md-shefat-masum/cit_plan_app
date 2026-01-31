@@ -1,0 +1,94 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/task-management/department-sub-section
+@token = 
+
+GET {{apiUrl}}?per_page=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get by department_id
+GET {{apiUrl}}?conditions[department_id]=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get by department_section_id
+GET {{apiUrl}}?conditions[department_section_id]=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "department_id": 1,
+    "department_section_id": 1,
+    "title": "Sub Section A",
+    "status": 1
+}
+
+### Update
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "department_id": 1,
+    "department_section_id": 1,
+    "title": "Sub Section A Updated",
+    "status": 1
+}
+
+### Soft delete
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Destroy
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {"department_id": 1, "department_section_id": 1, "title": "Sub 1", "status": 1},
+        {"department_id": 1, "department_section_id": 1, "title": "Sub 2", "status": 1}
+    ]
+}
+
+### Analytics
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json

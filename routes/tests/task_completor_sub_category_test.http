@@ -1,0 +1,92 @@
+### Variables
+### NOTE: Token is automatically synced from token.txt
+### To update: Run 'php routes/tests/update_token.php' or use VS Code task "Update Token in HTTP Test Files"
+@baseUrl = http://localhost:8000
+@apiUrl = {{baseUrl}}/api/v1/management/task-management/task-completor-sub-categories
+@token = 
+
+GET {{apiUrl}}?paginate=10&page=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all task completor sub categories with search filter
+GET {{apiUrl}}?search=
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get all task completor sub categories with status filter
+GET {{apiUrl}}?status=1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Get a specific task completor sub category by ID
+GET {{apiUrl}}/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+### Create a new task completor sub category (Store)
+POST {{apiUrl}}/store
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "task_completor_category_id": 1,
+    "title": "Senior Member",
+    "status": 1
+}
+
+### Update a task completor sub category
+POST {{apiUrl}}/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1,
+    "task_completor_category_id": 1,
+    "title": "Junior Member",
+    "status": 1
+}
+
+### Soft delete a task completor sub category
+POST {{apiUrl}}/soft-delete
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Restore a task completor sub category
+POST {{apiUrl}}/restore
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Permanently delete a task completor sub category (Destroy)
+POST {{apiUrl}}/destroy
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+### Import task completor sub categories
+POST {{apiUrl}}/import
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "data": [
+        {"task_completor_category_id": 1, "title": "Senior Member", "status": 1},
+        {"task_completor_category_id": 1, "title": "Junior Member", "status": 1}
+    ]
+}
+
+### Get analytics
+GET {{apiUrl}}/analytics
+Authorization: Bearer {{token}}
+Content-Type: application/json
