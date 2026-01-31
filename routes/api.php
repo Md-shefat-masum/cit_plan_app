@@ -101,6 +101,46 @@ Route::group(['prefix' => 'v1',], function () {
                 });
             });
 
+            // task management routes will go here
+            Route::group(['prefix' => 'task-management'], function () {
+                Route::group(['prefix' => 'task-status'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskStatus\TaskStatusController');
+                });
+                Route::group(['prefix' => 'task-type'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskType\TaskTypeController');
+                });
+                Route::group(['prefix' => 'department'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\Department\DepartmentController');
+                });
+                Route::group(['prefix' => 'department-section'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\DepartmentSection\DepartmentSectionController');
+                });
+                Route::group(['prefix' => 'department-sub-section'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\DepartmentSubSection\DepartmentSubSectionController');
+                });
+                Route::group(['prefix' => 'dofa'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\DofaManagement\Dofa\DofaController');
+                });
+                Route::group(['prefix' => 'task-plan'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskPlan\TaskPlanController');
+                });
+                Route::group(['prefix' => 'time-duration'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TimeDuration\TimeDurationController');
+                });
+                Route::group(['prefix' => 'time-sub-duration'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TimeSubDuration\TimeSubDurationController');
+                });
+                Route::group(['prefix' => 'task-completor-categories'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskCompletorCategory\TaskCompletorCategoryController');
+                });
+                Route::group(['prefix' => 'task-completor-sub-categories'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskCompletorSubCategory\TaskCompletorSubCategoryController');
+                });
+                Route::group(['prefix' => 'task-sub-plan'], function () {
+                    common_routes(Route::class, 'App\Http\Controllers\Management\V1\TaskManagement\TaskSubPlan\TaskSubPlanController');
+                });
+            });
+
         });
         
     });
